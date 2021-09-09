@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .logo {
+    width: 250px;
+    height: auto;
+  }
+  .home {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  
+  main {
+    padding: 4rem;
+    min-height: calc(100vh - 60px);
+  }
+  
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0px 0px 15px 0px;
+    font-weight: 400;
+   }
+   h1.lg-heading,
+   h2.lg-heading,
+   h3.lg-heading {
+     font-size: 6rem;
+     color:#fff;
+     line-height: 1.5;
+     text-align: left;
+  }
+  
+  /* .services {
+    background-image: url('/images/img-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  .products {
+    background-image: url('/images/img-1.jpg');
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  .sign-up {
+    background-image: url('/images/img-8.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  } */
+  
+  /* Styles for Work Component */
+  .projects {
+    display: grid;
+    grid-gap: 1.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom:  5px solid; 
+    color: #fff;
+  }
+  .projects img {
+    width: 250px;
+    height: 250px;
+    border: 3px #fff solid;
+   }
+   .projects img:hover {
+    opacity: 0.5;
+    border-color: #00afd7;
+    transition: all 0.5s ease-out;
+   }
+   .projects h2 {
+    color: #00afd7;
+  }
+  .projects .school-project {
+    width: 300px;
+    height: 150px;
+   }
+  .projects .centered {
+    margin: auto;
+   }
+  .projects .proj-link:link,
+  .projects .proj-link:visited,
+  .projects .github {
+    text-decoration: none;
+    background-color: #00afd7;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 0px 20px 10px 0px;
+   }
+  .projects .proj-link:hover,
+  .projects .github:hover {
+    background-color: white;
+    color: #444;
+    border: 1px solid #444;
+   }
+  .projects #main-image {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 10px;
+    display: inline-block;
+   }
+  
+   .projects p {
+     margin-bottom: 10px;
+   }
+  
+  /* Styles for About Component */
+  .about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: "bioimage bio bio"
+   "job1 job2 job3"
+   "skills skills skills";
+    grid-template-columns: repeat(3, 1fr); 
+    color: #fff;
+  }
+  .about-info .bio-image {
+      grid-area: bioimage;
+      margin: auto;
+      border-radius: 50%;
+      border: #00afd7 3px solid; 
+    }
+  .about-info .bio {
+      grid-area: bio;
+      font-size: 1.5rem; 
+    }
+  .about-info .job-1 {
+      grid-area: job1; 
+    }
+  .about-info .job-2 {
+      grid-area: job2; 
+    }
+  .about-info .job-3 {
+      grid-area: job3; }
+  .about-info .job, .about-info .skills {
+      background: #515151;
+      padding: 0.5rem;
+      border-bottom: #00afd7 5px solid; 
+    }
+  .about-info .skills {
+      grid-area: skills; 
+    }
+  .about-info .skills li {
+      list-style: none;
+      display: inline-block;
+      font-size: .9rem;
+    }
+    .skills ul li {
+      margin-left: 15px;
+    }
+  
+  .job p, .job h5 {
+      margin-bottom: 25px;
+    }
+   .job ul {
+     list-style-position: inside;
+   }
+  
+  .job ul li {
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  /* Styles for Contact Component */
+  .boxes {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: "contact"
+   "quote";
+    grid-template-columns: repeat(2, 1fr); 
+  }
+    .boxes .contact, .boxes .quote {
+      background: #515151;
+      padding: 0.5rem;
+      border-bottom: #00afd7 5px solid; 
+    }
+    .boxes .contact-name, .boxes .quote-title {
+      color: #00afd7; 
+    }
+    .boxes .fab, .boxes .fas {
+      margin: 10px;
+      font-size: 1.2rem; 
+    }
+    .boxes .skills li {
+      list-style: none; 
+    }
+    .boxes .form-image, .boxes .frmImage {
+      width: 250px;
+      height: auto; 
+    }
+    .boxes input[type=text], .boxes input[type=email], .boxes input[type=textarea] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border-radius: 5px;
+      box-sizing: border-box; 
+    }
+    .boxes input[type=textarea] {
+      height: 100px;
+      resize: none; 
+    }
+    .boxes input[type=text]:focus, .boxes input[type=email]:focus {
+      background-color: lightblue; 
+    }
+    .boxes input[type=submit] {
+      width: 100%;
+      background-color: #00afd7;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer; 
+    }
+    .boxes .wrapper {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-areas: "form-image"
+   "form";
+      grid-template-columns: repeat(2, 1fr);
+      border: 1px solid #00afd7;
+      padding: 8px;
+      border-radius: 5px; 
+    }
+    .contact, .quote, .icons i {
+      color: #fff;
+    }
+    .contact p {
+      margin-bottom: 15px;
+    }
+    .icons {
+      margin-top: 1rem; 
+    }
+    .icons a {
+      padding: 0.4rem; 
+    }
+    .icons a:hover {
+      color: #00afd7;
+      transition: all 0.5s ease-out; 
+    }
+  
+  /* Footer section */
+  #main-footer {
+    padding: 1rem;
+    background: #2b2b2b;
+    color: #fff;
+    height: 60px; 
+    display: flex;
+    align-items: center;
+  }
+  #main-footer p {
+    margin-left: 100px;
+    color: #00afd7;
+  }
+  
+  .footer-logo {
+    width: 180px;
+    height: auto;
+  }
+  
+  /* Media Queries */
+  
+   @media screen and (min-width: 1171px) {
+    .projects {
+      grid-template-columns: repeat(4, 1fr); 
+    }
+   }
+  
+   @media screen and (min-width: 769px) and (max-width: 1170px) {
+    .projects {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+   }
+   @media screen and (max-width: 768px) {
+    main {
+      align-items: center;
+      text-align: center; 
+    }
+    h1.lg-heading,
+    h2.lg-heading,
+    h3.lg-heading, 
+    h2.sm-heading {
+      text-align: center;
+   }
+      main .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem; 
+    }
+    .about-info {
+      grid-template-areas: "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3"
+      "skills";
+      grid-template-columns: 1fr; 
+    }
+    .skills {
+      text-align: left; 
+    }
+   }
+  
+   @media screen and (max-width: 767px) {
+    .about-info {
+      grid-template-areas: "bioimage"
+   "bio"
+   "job1"
+   "job2"
+   "job3"
+   "skills";
+      grid-template-columns: 1fr; 
+    }
+    .boxes {
+      grid-template-areas: 'contact'
+   'quote';
+      grid-template-columns: 1fr; 
+    }
+    .skills {
+      text-align: left; 
+    }
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+     }
+   }
+  
+   @media screen and (max-width: 500px) {
+    .projects {
+      grid-template-columns: 1fr; 
+    }
+   }
